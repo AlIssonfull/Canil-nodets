@@ -3,12 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.js",
-  "engines": {
-    "node": "22.x"
-  },
+  "main": "index.ts",
   "scripts": {
-    "start": "node dist/server.js",
     "start-dev": "nodemon -e ts,json,mustache src/server.ts"
   },
   "author": "Alisson",

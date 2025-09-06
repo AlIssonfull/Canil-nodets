@@ -1,17 +1,18 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
-  "include": ["src/**/*", "src/routes/**/*"] ,
+  "include": ["src"],
   "compilerOptions": {
     // File Layout
-    "rootDir": "./src",
     "outDir": "./dist",
+    "rootDir": "./src",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
     "target": "esnext",
+    "module": "nodenext", 
     "moduleResolution": "nodenext",
     "types": ["node"],
+    "esModuleInterop": true,
     // For nodejs:
     // "lib": ["esnext"],
     // and npm install -D @types/node
@@ -41,10 +42,8 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-    "baseUrl": ".",                 
-    "paths": {
-      "*": ["node_modules/*", "src/routes/*"]},
+    "baseUrl": ".",
+    "noEmit": true,
     "allowImportingTsExtensions": true,
-    "noEmit": true
   }
 }

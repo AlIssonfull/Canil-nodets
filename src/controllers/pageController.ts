@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
 
-import {Pet} from '../models/pet.ts';
-import {createMenu} from '../heplers/createMenu.ts';
+import {Pet} from '../models/pet';
+import {createMenu} from '../heplers/createMenu';
 
 export const home=(req:Request, res:Response)=>{
     let list=Pet.getAll();

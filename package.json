@@ -2,9 +2,14 @@
   "name": "b7web",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
-  "main": "index.ts",
+  "main": "index.js",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
+    "tsc": "tsc",
+    "start": "node dist/server.js",
+    "postinstall": "npm run tsc && copyfiles -u 1 src/**/*.mustache dist/",
     "start-dev": "nodemon -e ts,json,mustache src/server.ts"
   },
   "author": "Alisson",
@@ -13,6 +18,7 @@
     "@types/express": "^5.0.3",
     "@types/mustache-express": "^1.2.5",
     "@types/node": "^24.3.1",
+    "copyfiles": "^2.4.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   },

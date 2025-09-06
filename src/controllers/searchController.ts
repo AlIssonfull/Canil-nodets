@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
 
-import {createMenu} from '../heplers/createMenu.ts';
-import {Pet} from '../models/pet.ts'
+import {createMenu} from '../heplers/createMenu';
+import {Pet} from '../models/pet'
 
 export const search=(req:Request, res:Response)=>{
     let query:string=req.query.q as string;

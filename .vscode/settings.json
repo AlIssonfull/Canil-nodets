@@ -1,9 +1,0 @@
-{
-    "editor.inlineSuggest.edits.showCollapsed": false,
-    "javascript.suggest.enabled": true,
-    "typescript.suggest.enabled": true,
-    "editor.autoSurround": "brackets",
-    "editor.autoClosingBrackets": "always",
-    "editor.inlineSuggest.enabled": false
-}
-
